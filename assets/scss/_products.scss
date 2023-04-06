@@ -1,0 +1,274 @@
+.products {
+    margin-top: 20px;
+
+    &__wrapper {
+        max-width: 100%;
+        width: 1024px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 1600px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+    }
+
+    &__item-bimetall::after {
+        position: absolute;
+        content: "";
+        width: 130px;
+        height: 132px;
+        background-image: url('/assets/img/desktop1.png');
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 10px;
+        right: 0px;
+        bottom: 0;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 56px;
+            height: 95px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 167px;
+            height: 136px;
+        }
+    }
+
+    &__item-alum::after {
+        position: absolute;
+        content: "";
+        width: 169px;
+        height: 125px;
+        background-image: url('/assets/img/desktop2.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 70px;
+            height: 110px;
+            background-position: -35px 0px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 206px;
+            height: 125px;
+        }
+
+    }
+
+    &__item-steel::after {
+        position: absolute;
+        content: "";
+        width: 133px;
+        height: 109px;
+        background-image: url('/assets/img/desktop3.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 62px;
+            height: 110px;
+            background-position: -35px 0px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 170px;
+            height: 109px;
+        }
+    }
+
+    &__item-trub::after {
+        position: absolute;
+        content: "";
+        width: 106px;
+        height: 127px;
+        background-image: url('/assets/img/desktop4.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 64px;
+            height: 99px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 143px;
+            height: 127px;
+        }
+    }
+
+    &__item-convector::after {
+        position: absolute;
+        content: "";
+        width: 110px;
+        height: 105px;
+        background-image: url('/assets/img/convector.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 59px;
+            height: 80px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 107px;
+            height: 107px;
+        }
+    }
+
+    &__item-floor::after {
+        position: absolute;
+        content: "";
+        width: 113px;
+        height: 138px;
+        background-image: url('/assets/img/desktop7.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 68px;
+            height: 94px;
+            background-position: -15px -25px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 152px;
+            height: 140px;
+        }
+    }
+
+    &__item-part::after {
+        position: absolute;
+        content: "";
+        width: 92px;
+        height: 138px;
+        background-image: url('/assets/img/desktop8.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 64px;
+            height: 85px;
+            bottom: 11px;
+            background-position: 0 0px;
+            background-size: 64px 85px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 130px;
+            height: 140px;
+        }
+    }
+
+    &__item-wall::after {
+        position: absolute;
+        content: "";
+        width: 99px;
+        height: 121px;
+        background-image: url('/assets/img/desktop6.png');
+        background-repeat: no-repeat;
+        right: 0px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 69px;
+            height: 94px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 137px;
+            height: 121px;
+        }
+    }
+
+    &__item-header {
+        color: #2B2A29;
+        vertical-align: middle;
+    }
+}
+
+.products__wrapper .item {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    padding: 52px 127px 0 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screensz1) and (max-width: $screensz2) {
+        display: flex;
+        align-items: center;
+        width: 230px;
+        height: 110px;
+        padding: 0px 69px 0px 19px;
+        margin: 0 10px 20px 10px;
+    }
+
+    @media (min-width: $screensz2) {
+        display: flex;
+        align-items: center;
+        width: 378px;
+        height: 140px;
+        padding: 0px 155px 0px 46px;
+        margin: 0 10px 20px 10px;
+    }
+}
+
+.products__wrapper .item:hover {
+    @media (min-width: $screensz1) {
+        text-decoration: underline;
+    }
+}
+
+.products__wrapper .item:nth-child(7) {
+    @media (min-width: $screensz1) {
+        order: 8;
+    }
+}
+
+.products__wrapper .item:nth-child(6) {
+    @media (min-width: $screensz1) {
+        order: 7;
+    }
+}
+
+.products__wrapper .item:last-child {
+    margin-bottom: 53px;
+
+    @media (min-width: $screensz1) and (max-width: $screensz2) {
+        margin-bottom: 66px;
+    }
+
+    @media (min-width: $screensz1) {
+        margin-bottom: 91px;
+    }
+}
